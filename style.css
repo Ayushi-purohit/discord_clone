@@ -14,8 +14,8 @@ body {
   background-image: url("BannerImage.jpg");
   background-size: cover;
   width: 100%;
-  height: 500px;
-  
+  height: 100vh;
+  display: flex;
 }
 .navbar {
   height: 50px;
@@ -62,20 +62,22 @@ margin-left: 40px;
 
 .hero-content {
   color: #ffffff;
-  /* font-family:fantasy ; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  /* letter-spacing: 1.5px; */
-
-  background-position: center;
-  position: absolute;
   justify-content: center;
-  top: 180px;
   text-align: center;
-  position: absolute;
-  left: 25%;
+  width: 60%;
+  max-width: 700px;
+  flex-wrap:wrap ;
+  margin-left: 15vw;
+  gap: 10px;
 }
-.hero-content h1 {
-  font-size: 7vh;
+.text h1 {
+  font-size: xx-large;
+}
+.text p{
+  font-size: medium;
 }
 .download1 {
   background-color: #ffffff;
@@ -87,101 +89,73 @@ margin-left: 40px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
   text-align: center;
-  left: 25%;
+}
+/* *******************section 2**************************** */
+
+.section2{
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.leftsection{
+  width: 50%;
+  min-width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightsection{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.rightsection h1{
+  font-size: xx-large;
+  font-weight: 900;
+}
+.rightsection p{
+  font-size: medium;
 }
 
-.second-section {
-  width: 100%;
-  height: 400px;
-  color: ghostwhite;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.second-img {
-  background-image: url("image1.svg");
-  width: 50%;
-  height: 100%;
-}
-.second-content {
-  color: black;
-  margin: 8rem;
-}
-.second-content strong {
-  font-size: 7vmin;
-}
-.third-section {
-  width: 100%;
-  height: 400px;
-  color: gainsboro;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.third-img {
-  background-image: url("image2.svg");
-  width: 50%;
-  height: 100%;
-}
-.third-content {
-  color: black;
-  padding: 5rem;
-  margin: 5rem;
-}
-.third-content strong {
-  font-size: 7vmin;
-}
-.fourth-section {
-  width: 100%;
-  height: 400px;
-  color: ghostwhite;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.fourth-img {
-  background-image: url("image3.svg");
-  width: 50%;
-  height: 100%;
-}
-.fourth-content {
-  align-items: center;
-  color: black;
-  padding: 5rem;
-  margin: 5rem;
-}
-.fourth-content strong {
-  font-size: 7vmin;
-}
+
 .fifth-section {
   width: 100%;
-  height: 1000px;
-  color: rgba(220, 220, 220, 0.192);
+  height: 120vh;
+  background-color: #ffffff;
+  color: #000;
+  overflow-x: hidden;
+  /* max-width: 1200px; */
+  /* margin: auto; */
   display: flex;
-  /* flex-wrap: wrap; */
+  align-items: center;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-}
-.fifth-content P {
-  color: black;
-  text-align: center;
-  margin: 1em;
-}
-#bold {
-  font-family: fantasy;
-  font-size: 8vmin;
-}
-.fifth-img {
-  display: flex;
-  justify-content: center;
-}
-#download-caption {
-  color: black;
-  align-self: center;
+  justify-content: center ;
+  /* row-gap: 20px; */
   
+}
+.fifth-section h1{
+  font-size: xx-large;        
+  font-weight: 800;
+  max-width: 800px;
+}
+.fifth-section p{
+  font-size: medium;
+  text-align: center;
+  max-width: 600px;
+}
+.fifth-section img{
+  width: 60%;
+  height: auto;
 }
 .download2 {
   background-color: rgb(75, 75, 237);
